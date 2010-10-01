@@ -1,1 +1,17 @@
 Can we use XSL-T to templating on server and client side for big web applications?
+
+What are my expectations?
+
+* Any or light template render process on server.
+* Only needed data will be send to client.
+* Template files orders data that are going to read and send.(lazy load) So, no data will be read if template not get.
+* URL addresses must define dynamically on templates.
+* Has multi-language support.
+* Browser cache-free.
+* XMLs and XSLs must be minified on production.
+* Ability to render on server based on user agent. For example; ability to send HTML version to Google-Bot.
+
+Ideas
+
+* Widgets responses all data structure but only authenticated values are filled.
+* XSL documents for views can be built dynamically on server side.
